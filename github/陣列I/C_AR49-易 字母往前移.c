@@ -11,15 +11,15 @@ int main(){
 	scanf("%d",&a);
 	len = strlen(line);
 	for(i = 0;i<len-1;i++) {
-		if(isalpha(line[i])) {
+		if(isalpha(line[i])) { //為字母的話
 			if(((line[i]+a <= 'z')&&(line[i]+a >='a')) || ((line[i]+a <= 'Z')&&(line[i]+a >='A'))) {
 				word[i] = line[i]+a;
 				word[i+1] = '\0';
-			}else{
+			}else{	//超出字母範圍的話
 				word[i] = line[i]+a-26;
 				word[i+1] = '\0';
 			}
-		}else if(isdigit(line[i])){
+		}else if(isdigit(line[i])){ //是數字的話做跟字一樣的運算
 			if((line[i]+a <= '9')&&(line[i]+a >='1')) {
 				word[i] = line[i]+a;
 				word[i+1] = '\0';
