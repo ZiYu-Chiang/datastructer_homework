@@ -13,13 +13,13 @@ int main(){
 	}
 	for(i = 0;i<len;i++) {
 		a = line[i];
-		if((a>32) && (a<128)) {
+		if((a>32) && (a<128)) { //範圍內就進行統計
 			cnt[a] = cnt[a] +1;
 		}
 	}
 	
 	for(i = 127;i>=0;i--) {
-		if(cnt[i]!=0) {
+		if(cnt[i]!=0) { //從較大的開始輸出，有出現過的再輸出
 			printf("%d %d\n",i,cnt[i]);
 		}	   
 	}
