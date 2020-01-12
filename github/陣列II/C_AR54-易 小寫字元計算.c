@@ -12,16 +12,16 @@ int main(){
 	for(i = 0;i<26;i++) {
 		cnt[i] = 0;
 	}
-	for(i = 0;i<b;i++) { //´«¦æ'\n'·|³QÅª¤J·|³Qºâ¨ì©Ò¥H¹w¨¾¦h¤@­¿
-		scanf("%s",word);
+	for(i = 0;i<b;i++) {
+		scanf("%s",word);//è®€è¡Œé€²ä¾†å†å–é ­é‚£å€‹char
 		c = word[0];
 		if(islower(c)) {
-			a = c -97;
+			a = c -97;   //è½‰æˆarrayçš„ç¯„åœå…§
 			cnt[a] = cnt[a]+1;
 		}
 	}
 	for(i = 0;i<26;i++) {
-		if(cnt[i] != 0) {
+		if(cnt[i] != 0) { //è¼¸å‡ºæ™‚å†é‹ç®—æˆæ”¶åˆ°çš„é‚£å€‹å­—å…ƒ
 			printf("%c %d\n",i+97,cnt[i]);
 		}
 	}
