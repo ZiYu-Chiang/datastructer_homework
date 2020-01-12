@@ -11,7 +11,7 @@ int main(){
 	for(i = 0;i<a;i++) {
 	 scanf("%s",line);
 	 len = strlen(line);
-	 for(j = len-1;j>=0;j--) {
+	 for(j = len-1;j>=0;j--) {//把字串倒著輸出
 		 printf("%c",line[j]);
 	 }
 	 printf("\n");
