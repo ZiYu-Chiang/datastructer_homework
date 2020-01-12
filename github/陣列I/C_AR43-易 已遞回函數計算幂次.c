@@ -1,11 +1,11 @@
 #include<stdio.h>
 
 int count(int a,int b){
-	if(b == 0) {
+	if(b == 0) { //所有的零次方值都為1
 		return 1;
-	}else if(b == 1){
+	}else if(b == 1){ //所有數的1次方為其本身
 		return a;
-	}else{
+	}else{ //乘該數本身，並將次方數少1
 		return a*count(a,b-1);
 	}
 }
