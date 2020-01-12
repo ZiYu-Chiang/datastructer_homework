@@ -17,7 +17,7 @@ int main(){
   while(isspace(word[count])) {
 	  count++;
   }
-  while(!isspace(word[count]) && count < b) {//¦r¦ê¤¤¨ú¾ã¼Æ
+  while(!isspace(word[count]) && count < b) {//å¾žå­—ä¸²ä¸­å–æ•´æ•¸
 	  tmp[index] = word[count];
 	  tmp[index+1] = '\0';  
 	  index++;
