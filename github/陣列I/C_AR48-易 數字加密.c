@@ -10,7 +10,7 @@ int main(){
 	int c[5];
 	scanf("%s",line);
 	for(i = 0;i<4;i++) {
-		if(i == 0) {
+		if(i == 0) { //換位置加運算轉換
 			c[2] = (int)((line[i]-48+7)%10);
 		}else if(i == 1){
 			c[3] = (int)((line[i]-48+7)%10);
