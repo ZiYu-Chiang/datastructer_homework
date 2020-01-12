@@ -14,11 +14,11 @@ int main(){
 	for(i = 0;i<len;i++) {
 		if(isalpha(line[i])) {
 			
-			if((line[i] <= 'z')&&(line[i] >='a')) {	//¤p¼g³B²z
+			if((line[i] <= 'z')&&(line[i] >='a')) {	//å°å¯«å­—æ¯
 				a = line[i]-97;
 				//printf("%d %c\n",a,line[i]);
 				cnt[a] = cnt[a] +1;
-			}else if((line[i]<= 'Z')&&(line[i] >='A')){	 //¤j¼g³B²z
+			}else if((line[i]<= 'Z')&&(line[i] >='A')){	 //å¤§å°å­—æ¯
 				a = line[i]-65;
 				//printf("%d %c\n",a,line[i]);
 				cnt[a] = cnt[a] +1;
