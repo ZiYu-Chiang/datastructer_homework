@@ -10,17 +10,17 @@ int main(){
  scanf("%d",&a);
  for(i = 0;i<a;i++) {
 	max = 0;
-	scanf("%d %d %d",&b,&c,&d);	  //d �B��d��
+	scanf("%d %d %d",&b,&c,&d);	  //d 運算範圍
 	word = (int**)malloc(sizeof(int*) * b);
 	for(j = 0;j<b;j++) {
 		*(word+j) = (int*)malloc(sizeof(int) * c);
 	}
 	for(j = 0;j<b;j++) {
 		for(z = 0;z<c;z++) {
-			scanf("%d",&word[j][z]); //�񦨹�
+			scanf("%d",&word[j][z]); //存成圖
 		}
 	}
-	for(j = 0;j<b-d+1;j++) {
+	for(j = 0;j<b-d+1;j++) {//根據圖跟範圍去算最大值
 		for(z = 0;z<c-d+1;z++) {
 			value = 0;
 			for(g = 0;g<d;g++) {
